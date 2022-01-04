@@ -1,0 +1,224 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;    
+}
+
+body{
+    height: 100vh;
+    background-color: #0a192f;
+    color: #64ffda;
+}
+
+
+/* headers and paragraphs */
+h1,h2{
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+h1{
+    font-size: 1.5em;    
+}
+h2{
+    font-size: 3em;
+    font-weight: 900;
+    color: #ccd6f6;    
+}
+
+h3{
+    font-weight: 500;
+    margin-bottom: 2em;
+    text-transform: capitalize;
+}
+
+h4{
+    font-weight: 700;
+}
+h5{
+    text-align: center;
+    font-size: 0.8em;
+    padding: 25px;
+}
+p{
+    font-size: 2em;
+    font-weight:700;
+    color: #8ae4cfbd;
+}
+#contact a{
+    text-decoration: none;
+    color:#64ffda;
+    padding: 15px 30px;
+    background-color: #0a192f;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+}
+#contact a:hover{
+    background-color: #374f7249;
+    cursor: pointer;
+    transition-delay: 0.1s;
+}
+
+/* classes and ids */
+
+.logo{
+    background-color: #64ffdb;
+    border-radius:50%;
+}
+
+.left-section{
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+}
+
+.left-section ul li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.left-section ul li a i{
+    color: #ccd6f6;
+    font-size: 24px;
+}
+.left-section ul li a i:hover{
+    color: #64ffda;
+    cursor: pointer;
+}
+
+ul.socials::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100px;
+    margin: 0px auto;
+    background-color: #ccd6f6;
+}
+
+.navtabs a{
+    color: #ccd6f6;
+    font-size: 15px;
+    margin: 0 10px;
+}
+.navtabs a:hover{
+    color: #64ffda;
+}
+
+#resume{
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    color:#64ffda;
+    padding: 10px 20px;
+}
+
+#resume:hover{
+    background-color: #374f7249;
+    cursor: pointer;
+    transition-delay: 0.1s;
+}
+
+#intro,#about,#projects,#contact{
+    margin-top: 10em;
+    width: 70%;
+}
+
+#about p{
+    font-size: 1.2rem;
+    font-weight:400;
+    margin-bottom: 5rem;
+    color: #ccd6f6;
+    line-height: 2;
+}
+
+#projects{
+    text-align: center;
+}
+
+#projects p{
+    gap: 1;
+}
+
+#contact{
+    text-align: center;
+    padding-Bottom: 50px;
+}
+
+.me{
+    margin-left: 30px;
+    width:200px;
+    height:200px;
+    float: right;
+}
+.b-line{
+    margin: 25px;
+    float: right;
+    position: relative;
+}
+.b-line::after {
+    content: "";
+    display: block;
+    float: right;
+    position: absolute;
+    z-index: -2;
+    top: 25px;
+    width: 200px;
+    height: 200px;
+    border: 4px solid #64ffda;
+}
+
+.f_col li,.s_col li,.t_col li{
+    list-style: circle;
+    color: #ccd6f6;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.f_col,.s_col,.t_col{
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    padding: 25px;
+    margin-right: 50px;
+    height:fit-content;
+    box-shadow: 4px 4px 8px #64ffda;
+}
+.s_col{
+    margin-top:100px;
+}
+.t_col{
+    margin-top:200px;
+}
+
+.pro_1{
+    width: 250px;
+    height: 150px;
+}
+
+.pcol:hover{
+    cursor: pointer;
+}
+
+
+#projects h4{
+    padding-top:10px;
+    font-size: 1em;
+    font-weight: 400;
+    color: #ccd6f6;
+}
+
+@media only screen and (max-width: 600px) {
+    #intro,#about,#project{
+        margin-bottom: 20px;
+    }
+    
+    .f_col,.s_col,.t_col,.p_col{
+        margin: 2em;
+    }
+}
+
+
+
+
+
